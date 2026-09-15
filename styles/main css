@@ -11,6 +11,9 @@ body {
     border: 1px solid black;
     border-radius:25px;
     box-shadow:5px 5px 0 0;
+    background: url("water2") right repeat-y;
+    background-attachment: fixed;
+
 }
 
 a:focus, a:hover {
@@ -44,7 +47,11 @@ nav {
 }
 
 main h3 {
-    margin-top: 3em;
+    margin: 3em 2em 1.5em;
+    border: 5px double blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 1em;
     font-size: 105%;
 }
 

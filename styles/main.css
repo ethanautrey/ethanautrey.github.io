@@ -33,10 +33,11 @@ header h2 {
 
 header img {
     float: left;
-    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
     margin-left: 2em;
-    width: 80px;
-    height: 80px;
+    margin-right: 20px;
 }
 
 .shadow {

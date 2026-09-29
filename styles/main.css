@@ -1,5 +1,9 @@
 html {
-    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+    background-image: url("../water2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {

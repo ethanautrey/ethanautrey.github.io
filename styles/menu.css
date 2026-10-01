@@ -1,0 +1,107 @@
+/* Ethan Autrey - MGIS 3320 Q5 */
+
+/* Basic page styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 20px;
+    background-color: white;
+}
+
+/* BLUE HORIZONTAL NAVIGATION MENU */
+
+#nav_menu {
+    margin-bottom: 1.5em;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+/* Removes the white border from the last menu item */
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+/* Project B is the current page */
+#nav_menu ul li a.current {
+    color: yellow;
+}
+
+/* Navigation hover/focus */
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: navy;
+}
+
+/* ARTICLE */
+
+article {
+    clear: both;
+}
+
+article h1 {
+    font-size: 150%;
+    margin-bottom: 1em;
+}
+
+article h2 {
+    font-size: 125%;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+article p {
+    line-height: 1.3;
+    margin-bottom: 1em;
+}
+
+/* ASIDE LIST */
+
+aside {
+    margin-top: 1.5em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+/* Requirement #5 */
+aside ol {
+    list-style-type: upper-roman;
+    padding-left: 1.5em;
+}
+
+/* Requirement #6 */
+aside ul {
+    list-style-type: square;
+    padding-left: 2em;
+}
+
+aside li {
+    margin-bottom: 0.25em;
+}
+
+aside p {
+    margin-top: 1em;
+}

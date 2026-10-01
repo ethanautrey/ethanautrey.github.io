@@ -1,0 +1,159 @@
+/* Ethan Autrey - Project Page */
+
+/* Page background */
+html {
+    background-image: linear-gradient(to left, white 0%, #facd8a 100%);
+}
+
+/* Main body */
+body {
+    width: 1000px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 15px auto;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+}
+
+/* Links */
+a:focus,
+a:hover {
+    font-style: italic;
+    color: orangered;
+}
+
+/* Header */
+header h1 {
+    font-size: 175%;
+    color: maroon;
+    text-indent: 30px;
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-size: 130%;
+    color: #800000;
+    text-indent: 30px;
+    margin-top: 5px;
+}
+
+/* Cat image in header */
+header img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-left: 2em;
+    margin-right: 20px;
+}
+
+/* Text shadow */
+.shadow {
+    text-shadow: 2px 2px 2px rgb(128, 0, 0);
+}
+
+/* Main content */
+main {
+    clear: both;
+    padding-top: 2em;
+}
+
+/* Left side - article */
+article {
+    clear: left;
+    width: 70%;
+    float: left;
+    column-count: 2;
+    column-rule: 2px dotted maroon;
+    column-gap: 2em;
+    margin-left: 2em;
+}
+
+/* Article heading spans both columns */
+article h3 {
+    column-span: all;
+    color: maroon;
+    font-size: 125%;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+/* Image inside article */
+article img {
+    float: left;
+    width: 180px;
+    height: auto;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Article paragraph */
+article p {
+    margin-top: 0;
+    line-height: 1.3;
+}
+
+/* Large green first letter */
+article p::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    color: lightgreen;
+    float: left;
+    line-height: 0.8;
+    margin-right: 5px;
+}
+
+/* Right side - references */
+aside {
+    width: 20%;
+    float: right;
+    background-color: #ffebc6;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+/* References heading */
+aside h4 {
+    color: maroon;
+    font-size: 120%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+/* Reference list */
+aside ol {
+    padding-left: 1.5em;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    border-top: 2px solid maroon;
+    margin-top: 2em;
+    padding-top: 0.5em;
+}
+
+/* Copyright */
+footer p.copyright {
+    text-align: center;
+    font-size: 80%;
+}
+
+/* Fixed contact box */
+.fixed {
+    position: fixed;
+    width: auto;
+    right: 20px;
+    bottom: 20px;
+    background-color: lightgreen;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px gray;
+}

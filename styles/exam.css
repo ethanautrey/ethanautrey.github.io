@@ -1,6 +1,6 @@
 html {
     background-image: url("../water2.jpg");
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -36,7 +36,7 @@ header nav a {
     font-weight: bold;
 }
 
-header nav a[href="exam.html"] {
+header nav a.current {
     color: yellow;
 }
 

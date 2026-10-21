@@ -12,12 +12,11 @@ html {
 
 body {
     width: min(1200px, calc(100% - 2em));
-    min-height: calc(100vh - 2em);
     margin: 1em auto;
     padding: 1.5em;
     border: 1px solid black;
     border-radius: 20px;
-    background-color: #ffe4be;
+    background-color: #edcc9f;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.45);
     color: #222;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,10 +89,6 @@ article h2 {
     font-size: 1.35em;
 }
 
-article section {
-    break-inside: auto;
-}
-
 article ul {
     margin: 0;
     padding: 0;
@@ -103,7 +98,6 @@ article ul {
 article li {
     margin: 0 0 0.8em;
     padding: 0;
-    break-inside: avoid;
     line-height: 1.45;
 }
 
@@ -122,18 +116,12 @@ article li.opening::first-letter {
     line-height: 0.78;
 }
 
-.planet-link {
-    display: block;
-    margin: 0 0 0.8em;
-    break-inside: avoid;
-}
-
-.planet-link img {
+article img {
     display: block;
     width: 100%;
     max-width: 250px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     border: 2px solid #174b2a;
 }
 
@@ -145,7 +133,6 @@ article iframe {
     height: auto;
     margin: 0 0 1em;
     border: 0;
-    break-inside: avoid;
 }
 
 aside {

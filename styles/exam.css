@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 html {
     background-image: url("../water2.jpg");
     background-size: cover;
@@ -11,137 +7,121 @@ html {
 }
 
 body {
-    width: min(1200px, calc(100% - 2em));
-    margin: 1em auto;
-    padding: 1.5em;
-    border: 1px solid black;
-    border-radius: 20px;
+    width: 95%;
     background-color: #edcc9f;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.45);
-    color: #222;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: 85%;
+    margin: 15px auto;
+    padding: 1em;
+    border: 2px solid darkgreen;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 black;
 }
 
-a {
-    color: #064f24;
+header nav {
+    padding: .5em 0;
+    border-bottom: 2px solid green;
+    margin-bottom: 1em;
 }
 
-a:hover,
-a:focus {
-    color: orangered;
-    font-style: italic;
-}
-
-header {
-    margin-bottom: 1.5em;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5em;
-    padding: 0.8em;
-    border-radius: 10px;
-    background-color: #174b2a;
-}
-
-nav a {
-    padding: 0.45em 0.8em;
+header nav a {
+    display: inline-block;
+    width: 90px;
+    padding: .6em 0;
+    margin-right: 2px;
+    background-color: darkgreen;
     color: white;
+    text-align: center;
     text-decoration: none;
+    font-weight: bold;
 }
 
-nav a:hover,
-nav a:focus {
-    color: #edcc9f;
+header nav a[href="exam.html"] {
+    color: yellow;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: green;
 }
 
 main {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 220px;
-    gap: 1.5em;
-    align-items: start;
+    margin: 1em;
 }
 
 article {
-    min-width: 0;
+    width: 72%;
+    float: left;
     column-count: 3;
-    column-gap: 1.8em;
-    column-rule: 3px dotted #008000;
-}
-
-article h1,
-article h2 {
-    column-span: all;
-    color: #174b2a;
-    break-after: avoid;
+    column-gap: 1.5em;
+    column-rule: 1px dotted green;
 }
 
 article h1 {
-    margin: 0 0 1em;
-    font-size: 1.8em;
+    color: darkgreen;
+    font-size: 150%;
+    margin-top: 0;
+    column-span: all;
 }
 
 article h2 {
-    margin: 1.2em 0 0.7em;
-    font-size: 1.35em;
+    color: darkgreen;
+    font-size: 115%;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 
 article ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    padding-left: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 article li {
-    margin: 0 0 0.8em;
-    padding: 0;
-    line-height: 1.45;
+    color: #111;
+    line-height: 1.15;
+    margin-bottom: .15em;
 }
 
-article li::marker,
-article li::before {
-    content: none;
+article li::marker {
+    color: green;
+    font-size: 1.1em;
 }
 
 article li.opening::first-letter {
     float: left;
-    margin: 0.02em 0.08em 0 0;
-    color: #7030a0;
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-    font-size: 3.4em;
-    font-weight: bold;
-    line-height: 0.78;
+    color: #9800a8;
+    font-family: "Monotype Corsiva", "Brush Script MT", cursive;
+    font-size: 3em;
+    font-style: italic;
+    line-height: .8;
+    padding-right: .08em;
 }
 
 article img {
-    display: block;
-    width: 100%;
-    max-width: 250px;
+    float: left;
+    width: 100px;
     height: auto;
-    margin: 0 auto 1em;
-    border: 2px solid #174b2a;
+    margin: 0 1em .75em 0;
 }
 
 article iframe {
-    display: block;
     width: 100%;
-    max-width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    margin: 0 0 1em;
+    max-width: 320px;
+    height: 180px;
     border: 0;
 }
 
 aside {
-    position: sticky;
-    top: 1em;
+    position: fixed;
+    top: 40%;
+    right: 2%;
+    width: 180px;
     padding: 1em;
-    border: 2px solid #174b2a;
-    border-radius: 12px;
-    background-color: #d9e8c7;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    box-shadow: 2px 2px 4px gray;
+    font-size: 85%;
 }
 
 aside ol {
@@ -149,60 +129,40 @@ aside ol {
 }
 
 aside li {
-    margin-bottom: 0.5em;
-    line-height: 1.4;
+    margin-bottom: .3em;
 }
 
-aside ol ol {
-    margin-top: 0.4em;
+aside a {
+    color: darkgreen;
 }
 
-aside p {
-    margin: 1em 0 0;
+aside a:hover,
+aside a:focus {
+    color: orangered;
 }
 
 footer {
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid #174b2a;
+    clear: both;
+    border-top: 2px solid green;
+    margin-top: 1em;
+    padding-top: .5em;
     text-align: center;
-    font-size: 0.85em;
+    font-size: 80%;
 }
 
-@media (max-width: 1000px) {
-    main {
-        grid-template-columns: minmax(0, 1fr) 190px;
-        gap: 1em;
-    }
-
-    article {
-        column-count: 2;
-    }
-}
-
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     body {
-        width: calc(100% - 1em);
-        margin: 0.5em auto;
-        padding: 1em;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
+        width: 90%;
     }
 
     article {
+        width: 100%;
         column-count: 1;
-        column-rule: none;
     }
 
     aside {
         position: static;
-        width: 100%;
-    }
-
-    nav {
-        justify-content: flex-start;
+        width: auto;
+        margin-top: 1em;
     }
 }

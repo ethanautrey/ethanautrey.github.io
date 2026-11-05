@@ -13,20 +13,23 @@
 const miles = parseInt(prompt("Enter miles driven"));
 const gallons = parseInt(prompt("Enter gallons of gas used"));
 const mpg = parseFloat(miles/gallons);
+
 const html2 = `<p>Miles: ${miles}</p>
 <p>Gallons: ${gallons}</p>
 <p>MPG: ${mpg.toFixed(2)}</p>`;
 document.write(html2);
 </script>
+
 <h2>The Rectangle Area Calculator</h2>
 <script>
     const width = parseInt(prompt("Enter the width of the rectangle"));
     const height = parseInt(prompt("Enter the height of the recatngle"));
-    const area = parseFloat(width*height).tofixed(3);
+    const area = parseFloat(width*height);
 
     const html3 = `<p>Width: ${width}</p>
                     <p>Height: ${height}</p>
-                    <p>Area: ${area}</p>`;
+                    <p>Area: ${area.toFixed(3)}</p>`;
+
 document.write(html3);
 </script>
 </body>

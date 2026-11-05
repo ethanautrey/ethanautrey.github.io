@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Test Scores App</h1>
+<script src="test_scores.js"></script>
+<h1>The Miles Per Gallon Calculator</h1>
+<script>
+const miles = parseInt(prompt("Enter miles driven"));
+const gallons = parseInt(prompt("Enter gallons of gas used"));
+const mpg = parseFloat(miles/gallons);
+const html2 = `<p>Miles: ${miles}</p>
+<p>Gallons: ${gallons}</p>
+<p>MPG: ${mpg.toFixed(2)}</p>`;
+document.write(html2);
+</script>
+</body>
+</html>

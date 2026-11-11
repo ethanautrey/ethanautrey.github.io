@@ -1,3 +1,4 @@
+
 html, body { 
 
 margin: 1em; 
@@ -68,4 +69,34 @@ table.second thead tr:first-child{
 
     border-bottom: 2px solid purple; 
 
-} 
+}
+
+/*-----------------------------------------------------------*/
+
+table.third {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.third th, table.third td {
+    padding: 0.7em;
+    vertical-align: top;
+}
+
+table.third thead tr:first-child {
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+}
+
+table.third thead tr:nth-child(2) {
+    border-bottom: 2px solid orangered;
+}
+
+table.third tbody tr:nth-child(2),
+table.third tbody tr:nth-child(5) {
+    border-top: 2px solid orangered;
+}
+
+table.third tbody tr:last-child {
+    border-bottom: 2px solid orangered;
+}

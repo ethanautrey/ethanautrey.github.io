@@ -10,8 +10,6 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Navigation */
-
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -92,8 +90,6 @@ html, body {
 
 /* End of menu */
 
-/* Links */
-
 .top-nav a {
     text-decoration: none;
     color: white;
@@ -103,8 +99,6 @@ html, body {
 a.current {
     text-decoration: underline;
 }
-
-/* Article */
 
 article {
     padding: 0 1em;
@@ -125,16 +119,12 @@ article img {
     max-width: 760px;
 }
 
-/* Footer */
-
 footer {
     border-top: 2px solid #f46b45;
     text-align: center;
     font-size: .8em;
     padding: 0.5em;
 }
-
-/* Responsive Design */
 
 @media (max-width: 700px) {
 

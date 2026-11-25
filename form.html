@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="register_account.html" method="post" id="registration_form"> 
+        <fieldset> 
+
+        <legend>Registration Information</legend> 
+
+        <label for="email">E-Mail:</label> 
+
+        <input type="email" name="email" id="email" 
+
+            autofocus required autocomplete="on"><br> 
+
+        <label for="password">Password:</label> 
+
+        <input type="password" name="password" id="password" required 
+
+            placeholder="At least 6 letters or numbers"  
+
+            pattern="[a-zA-Z0-9]{6,}" 
+
+            title="Must be at least 6 alphanumeric characters"> 
+
+        <br> 
+
+        <label for="verify">Verify Password:</label> 
+
+        <input type="password" name="verify" id="verify" required><br> 
+
+ </fieldset> 
+    <fieldset> 
+
+        <legend>Member Information</legend> 
+
+        <label for="first_name">First Name:</label> 
+
+        <input type="text" name="first_name" id="first_name" 
+
+            required autocomplete="on"><br>         
+
+        <label for="state">State:</label> 
+
+        <input type="text" name="state" id="state" required  
+
+            maxlength="2"  
+
+            placeholder="2-character code" 
+
+            autocomplete="on"><br> 
+
+        <label for="zip">ZIP Code:</label> 
+
+        <input type="text" name="zip" id="zip" required 
+
+            placeholder="5 or 9 digits"  
+
+            pattern="^\d{5}(-\d{4})?$" 
+
+            title="Either 5 or 9 digits" 
+
+            autocomplete="on"><br> 
+
+        <label for="phone">Phone Number:</label> 
+
+        <input type="tel" name="phone" id="phone" 
+
+            placeholder="999-999-9999"  
+
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"  
+
+            title="Must be 999-999-999 format" 
+
+            autocomplete="on"><br> 
+
+    </fieldset> 
+        <fieldset>
+        <legend>How Did You Hear About Us?</legend>
+
+        <label for="search_engine">Search engine</label>
+        <input type="checkbox" name="search_engine" id="search_engine"><br>
+
+        <label for="social_media">Social media</label>
+        <input type="checkbox" name="social_media" id="social_media"><br>
+
+        <label for="email_source">Email</label>
+        <input type="checkbox" name="email_source" id="email_source"><br>
+
+        <label for="friend">Friend or colleague</label>
+        <input type="checkbox" name="friend" id="friend"><br>
+    </fieldset>
+        <fieldset>
+        <legend>Comments</legend>
+
+        <textarea name="comments" id="comments" rows="5" cols="50"
+            placeholder="If you have any comments, please enter them here."></textarea>
+    </fieldset>
+        <fieldset>
+        <legend>Submit Your Membership</legend>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Fields">
+    </fieldset>
+    </form>
+</body>
+</html>

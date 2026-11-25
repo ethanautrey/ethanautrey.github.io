@@ -1,0 +1,85 @@
+fieldset { 
+
+    width: 40em; 
+
+    margin-top: 1em; 
+
+    margin-bottom: 1em; 
+
+    padding-top: .5em; 
+
+} 
+
+legend { 
+
+    color: #931420; 
+
+    font-weight: bold; 
+
+    font-size: 85%; 
+
+    margin-bottom: .5em; 
+
+} 
+
+label, input, select { 
+
+    font-size: 90%; 
+
+} 
+
+label { 
+
+    float: left; 
+
+    width: 9em; 
+
+    text-align: right; 
+
+} 
+
+input, select { 
+
+    margin-left: .5em; 
+
+    margin-bottom: .5em; 
+
+} 
+
+input:required { 
+
+    border: 3px solid red; 
+
+} 
+
+input:valid { 
+
+    border: 1px solid black; 
+
+} 
+
+input:invalid { 
+
+    box-shadow: none; 
+
+} 
+
+br { 
+
+    clear: both; 
+
+} 
+
+textarea { 
+
+    height: 5em; 
+
+    width: 35em; 
+
+} 
+
+#buttons input { 
+
+    width: 10em; 
+
+} 
